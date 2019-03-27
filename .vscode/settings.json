@@ -1,0 +1,108 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true, //保存时格式化
+  //eslint设置
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onType",
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".vue"
+    ],
+    "plugins": [
+      "html"
+    ]
+  },
+  "eslint.validate": [
+    //开启对.vue文件中错误的检查
+    "javascriptreact",
+    "html",
+    "vue",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  //prettier设置
+  "prettier.eslintIntegration": true, //让prettier使用eslint的代码格式进行校验
+  "prettier.semi": false,
+  //单引号
+  "prettier.singleQuote": true,
+  // 定义函数参数括号前的空格处理方式。
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // 定义匿名函数的函数关键字后面的空格处理。
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "vetur.format.defaultFormatter.html": "js-beautify-html", //格式化.vue中html
+  "vetur.format.defaultFormatter.js": "vscode-typescript", //让vue中的js按编辑器自带的ts格式进行格式化
+  "vetur.format.defaultFormatterOptions": {
+    "wrap_attributes": "force-expand-multiline",
+    "js-beautify-html": {
+      "wrap_attributes": "force-aligned", //属性强制折行对齐
+      "end_with_newline": false
+    }
+  },
+  // 控制代码片段是否与其他建议一起显示及其排列的位置。
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggest.snippetsPreventQuickSuggestions": true,
+  "editor.suggestSelection": "first",
+  "git.autofetch": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "files.exclude": {
+    "**/.history": true,
+    "**/.idea": true,
+    "**/yarn.lock": true,
+    "**/tmp": true
+  },
+  "update.channel": "none",
+  // VScode 文件搜索区域配置
+  "search.exclude": {
+    "**/dist": true,
+    "**/build": true,
+    "**/elehukouben": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "**/tmp": true
+  },
+  "files.associations": {
+    "*.css": "scss"
+  },
+  // 定义控制块的左括号是否放置在新的一行。
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  // 定义函数的左大括号是否放置在新的一行。
+  "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "cSpell.userWords": [
+    "nprogress",
+    "vuex",
+    "wx"
+  ],
+  "breadcrumbs.enabled": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "prettier.printWidth": 100,
+  "todo-tree.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  "todo-tree.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
+  "less.compile": {
+    "compress": true, // true => remove surplus whitespace
+    "sourceMap": true, // true => generate source maps (.css.map files)
+    "out": false // false => DON'T output .css files (overridable per-file, see below)
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
