@@ -5,12 +5,12 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: '武汉智图科技有限责任公司',
+    title: 'xx公司官网',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '武汉智图科技有限责任公司' },
-      { hid: 'keywords', name: 'keywords', content: '外业测量，产品研发，GIS解决方案，智图科技，AI出图' }
+      { hid: 'description', name: 'description', content: 'xx公司官网' },
+      { hid: 'keywords', name: 'keywords', content: '外业测量，产品研发，GIS解决方案，数据可视化，AI出图' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
